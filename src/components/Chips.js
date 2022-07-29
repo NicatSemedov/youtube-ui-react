@@ -6,7 +6,7 @@ function Chips() {
     
     useLayoutEffect(() => {
         chipRef.current.offsetWidth > 100 ?? chipRef.classList.add('bigChip')
-        console.log(chipRef.current.offsetWidth)
+        console.log(chipRef)
     }, [])
     
     const chips = [
