@@ -1,14 +1,7 @@
-import React, {useRef, useLayoutEffect} from 'react'
+import React from 'react'
 import '../style/Chips.css'
 
 function Chips() {
-    const chipRef = useRef(null)
-    
-    useLayoutEffect(() => {
-        chipRef.current.offsetWidth > 100 ?? chipRef.classList.add('bigChip')
-        console.log(chipRef)
-    }, [])
-    
     const chips = [
         'All',
         'Game',
@@ -30,8 +23,8 @@ function Chips() {
             <div className="Slider">
                 <div className="border" />
                 {chips.map((chip, i) => (
-                    <div ref={chipRef} className={`chip ${i === 0 ? 'first' : ''}`} key={i}>
-                        <span>{chip}</span>
+                    <div className={`chip ${i === 0 ? 'first' : ''}`} key={i}>
+                        {chip}
                     </div>
                 ))}
             </div>
