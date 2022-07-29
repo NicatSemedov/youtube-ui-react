@@ -6,16 +6,16 @@ function Chips() {
         'All',
         'Game',
         'JavaScript',
-        'Computer Program',
+        'Computer',
         'Apple',
         'Astronomy',
         'Java',
-        'Recently Uploaded',
+        'Science',
         'Campfires',
         'Super Heroes',
         'Music',
-        'Science Fiction',
         'PUBG',
+        'Funny',
         'Building'
     ]
     return (
