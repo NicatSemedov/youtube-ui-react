@@ -24,7 +24,7 @@ function Chips() {
                 <div className="border" />
                 {chips.map((chip, i) => (
                     <div className={`chip ${i === 0 ? 'first' : ''}`} key={i}>
-                        {chip}
+                        <span>{chip}</span>
                     </div>
                 ))}
             </div>
