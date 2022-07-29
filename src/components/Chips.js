@@ -1,7 +1,13 @@
-import React from 'react'
+import React, {useRef, useEffect} from 'react'
 import '../style/Chips.css'
 
 function Chips() {
+    const chipRef = useRef()
+    
+    useEffect(() => {
+        chipRef.innerWidth > 100 ? chipRef.classList.add('bigChip')
+    }, [chipRef])
+    
     const chips = [
         'All',
         'Game',
@@ -23,7 +29,7 @@ function Chips() {
             <div className="Slider">
                 <div className="border" />
                 {chips.map((chip, i) => (
-                    <div className={`chip ${i === 0 ? 'first' : ''}`} key={i}>
+                    <div ref={chipRef} className={`chip ${i === 0 ? 'first' : ''}`} key={i}>
                         <span>{chip}</span>
                     </div>
                 ))}
