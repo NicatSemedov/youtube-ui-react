@@ -5,7 +5,7 @@ function Chips() {
     const chipRef = useRef()
     
     useEffect(() => {
-        chipRef.innerWidth > 100 ? chipRef.classList.add('bigChip')
+        chipRef.innerWidth > 100 ?? chipRef.classList.add('bigChip')
     }, [chipRef])
     
     const chips = [
