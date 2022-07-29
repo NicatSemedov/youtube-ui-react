@@ -12,10 +12,12 @@ function Chips() {
         'Java',
         'Science',
         'Campfires',
+        'Python',
         'Super Heroes',
         'Music',
         'PUBG',
-        'Funny',
+        'React',
+        'Next Js',
         'Building'
     ]
     return (
