@@ -1,12 +1,12 @@
-import React, {useRef, useEffect} from 'react'
+import React, {useRef, useLayoutEffect} from 'react'
 import '../style/Chips.css'
 
 function Chips() {
-    const chipRef = useRef()
+    const chipRef = useRef(null)
     
-    useEffect(() => {
-        chipRef.innerWidth > 100 ?? chipRef.classList.add('bigChip')
-    }, [chipRef])
+    useLayoutEffect(() => {
+        chipRef.current.offsetWidth > 100 ?? chipRef.classList.add('bigChip')
+    }, [])
     
     const chips = [
         'All',
