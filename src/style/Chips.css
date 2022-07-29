@@ -50,6 +50,10 @@
     background-color: rgb(230, 235, 230);
 }
 
+.chip span{
+    margin-right: 12px;
+}
+
 .first {
     margin-left: 24px;
     background-color: black;
