@@ -36,6 +36,7 @@
     display: inline-flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     font-size: 14px;
     font-family: 'Roboto', 'Arial', sans-serif;
     font-weight: 400;
